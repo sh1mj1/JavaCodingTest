@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * 문제 - 백준 1943 거짓말
- * 링크 - https://www.acmicpc.net/problem/1943
+ * 문제 - 백준 1043 거짓말
+ * 링크 - https://www.acmicpc.net/problem/1043
  * 등급 -  gold 4
  * 특이사항 - Do it Java 알고리즘 책 문제 052
  */
-public class BaekJun1943Book {
+public class BaekJun1043Book {
     static int[] parent;
     static int[] trueP;
     static ArrayList<Integer>[] party;
