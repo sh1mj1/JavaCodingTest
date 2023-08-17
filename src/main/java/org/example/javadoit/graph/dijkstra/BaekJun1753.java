@@ -62,7 +62,7 @@ public class BaekJun1753 {
 
             visited[nowVertex] = true;
 
-            for(Edge tempEdge: list[nowVertex]){
+            for (Edge tempEdge : list[nowVertex]) {
                 int nextVertex = tempEdge.vertex;
                 int nextWeight = tempEdge.weight;
 
@@ -83,23 +83,25 @@ public class BaekJun1753 {
         }
 
     }
-}
 
-class Edge implements Comparable<Edge> {
-    int vertex;
-    int weight;
+    static class Edge implements Comparable<Edge> {
+        int vertex;
+        int weight;
 
-    public Edge(int vertex, int weight) {
-        this.vertex = vertex;
-        this.weight = weight;
+        public Edge(int vertex, int weight) {
+            this.vertex = vertex;
+            this.weight = weight;
+        }
+
+
+        @Override
+        public int compareTo(Edge o) {
+            return this.weight - o.weight;
+        }
     }
 
-
-    @Override
-    public int compareTo(Edge o) {
-        return this.weight - o.weight;
-    }
 }
+
 
 /*
 슈도 코드

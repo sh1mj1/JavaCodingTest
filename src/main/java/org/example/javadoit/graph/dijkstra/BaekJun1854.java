@@ -1,4 +1,4 @@
-package org.example.javadoit.graph.dijkstra;
+ package org.example.javadoit.graph.dijkstra;
 
 import java.io.*;
 import java.util.Comparator;
@@ -75,23 +75,23 @@ public class BaekJun1854 {
         bufferedWriter.close();
 
     }
+    static class Node implements Comparable<Node>{
+        int node;
+        int weight;
+
+        public Node(int node, int weight) {
+            this.node = node;
+            this.weight = weight;
+        }
+
+        @Override
+        public int compareTo(Node o) {
+            return o.weight - this.weight;
+        }
+    }
 
 }
 
-class Node implements Comparable<Node>{
-    int node;
-    int weight;
-
-    public Node(int node, int weight) {
-        this.node = node;
-        this.weight = weight;
-    }
-
-    @Override
-    public int compareTo(Node o) {
-        return o.weight - this.weight;
-    }
-}
 
 /*
 슈도코드

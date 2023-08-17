@@ -99,6 +99,7 @@ public class BaekJun1948 {
 }
 
 /* 슈도 코드
+
 N: 도시의 개수
 M: 도로 수
 graph: 정방향 그래프 인접리스트 , inverseGraph: 역방향 그래프 ArrayList<Node>[]
